@@ -24,165 +24,340 @@ html {
   height: 100%;
 }
 
-.background {
-  position: absolute;
-  top: 0;
-  height: 100%;
-  background-image: url(https://www.mosesnet.com/Templates/scubamonster/images/bg.jpg);
-  background-size: cover;
+/* web browser */
+@media screen and (min-width: 850px) {
+  .background {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background-image: url(https://www.mosesnet.com/Templates/scubamonster/images/bg.jpg);
+    background-size: cover;
+  }
+
+  .whole {
+    margin-top: 2.5%;
+    margin-left: 10%;
+    width: 80%;
+    height: 90%;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    background-color: #f4f4f4;
+    padding-left: 50px;
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.08), 0 8px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 15px;
+  }
+
+  .nav {
+    margin-top: 2.5%;
+    margin-left: 10%;
+    width: 50px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 10px;
+    border-radius: 15px 0 0 15px;
+  }
+
+  .nav .nav__icon {
+    margin-bottom: auto;
+  }
+
+  .nav .nav__list {
+    margin-bottom: auto;
+    display: flex;
+    list-style: none;
+    transform: rotate(-90deg);
+    font-weight: 600;
+  }
+
+  .nav .nav__list > * {
+    margin-right: 10px;
+  }
+
+  .header {
+    margin-top: 25px;
+    align-self: start;
+    margin-top: 25px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px;
+  }
+
+  .header .header__icon {
+    margin-right: 20px;
+  }
+
+  .header .header__title {
+    margin-right: auto;
+    margin-left: auto;
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  .pagination {
+    align-self: end;
+    justify-self: center;
+    margin-bottom: 25px;
+    font-weight: 600;
+  }
+
+  .pagination .pagination__number--current {
+    text-decoration: line-through;
+  }
+
+  .slider {
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+  }
+
+  .slider .slider__arrow:first-child {
+    margin-right: 20px;
+  }
+
+  .slider .slider__arrow:last-child {
+    margin-left: 20px;
+  }
+
+  .slider .slider__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+    grid-gap: 20px;
+    background-color: white;
+  }
+
+  .slider__content .slider__photo {
+    background-image: url(https://i.pinimg.com/564x/b4/c9/c5/b4c9c5d22a51f7c8289fb3ef85e80a95.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .info {
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    padding: 30px 0 30px 0;
+  }
+
+  .info .info__pre-title {
+    text-transform: uppercase;
+    color: #3498db;
+    font-weight: 300;
+  }
+
+  .info .info__pre-title,
+  .info .info__title,
+  .info .info__intro {
+    margin-bottom: 20px;
+  }
+
+  .info .info__title {
+    font-size: 44px;
+    text-align: center;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+
+  .info .info__intro {
+    font-style: italic;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    text-align: center;
+  }
+
+  .info .info__date {
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+
+  .info .info__intro {
+    color: var(--greyColor);
+  }
 }
 
-.whole {
-  margin-top: 2.5%;
-  margin-left: 10%;
-  width: 80%;
-  height: 90%;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: #f4f4f4;
-  padding-left: 50px;
-  display: grid;
-  grid-template-rows: 1fr 3fr 1fr;
-  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.08), 0 8px 8px rgba(0, 0, 0, 0.08);
-  border-radius: 15px;
-}
+/* mobile browser */
+@media screen and (max-width: 850px) {
+  .background {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background-image: url(https://www.mosesnet.com/Templates/scubamonster/images/bg.jpg);
+    background-size: cover;
+  }
 
-.nav {
-  margin-top: 2.5%;
-  margin-left: 10%;
-  width: 50px;
-  background-color: white;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 80%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  padding: 40px 10px;
-  border-radius: 15px 0 0 15px;
-}
+  .whole {
+    margin-top: 2.5%;
+    margin-left: 10%;
+    width: 80%;
+    height: 96%;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    background-color: #f4f4f4;
+    padding-left: 50px;
+    display: grid;
+    grid-template-rows: 1fr 450fr 1fr;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.08), 0 8px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 15px;
+  }
 
-.nav .nav__icon {
-  margin-bottom: auto;
-}
+  .nav {
+    margin-top: 2.5%;
+    margin-left: 10%;
+    width: 30px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 96%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 10px;
+    border-radius: 15px 0 0 15px;
+  }
 
-.nav .nav__list {
-  margin-bottom: auto;
-  display: flex;
-  list-style: none;
-  transform: rotate(-90deg);
-  font-weight: 600;
-}
+  .nav .nav__icon {
+    margin-bottom: auto;
+  }
 
-.nav .nav__list > * {
-  margin-right: 10px;
-}
+  .nav .nav__list {
+    margin-bottom: auto;
+    display: flex;
+    list-style: none;
+    transform: rotate(-90deg);
+    font-weight: 600;
+  }
 
-.header {
-  margin-top: 25px;
-  align-self: start;
-  margin-top: 25px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0px 10px;
-}
+  .nav .nav__list > * {
+    margin-right: 10px;
+  }
 
-.header .header__icon {
-  margin-right: 20px;
-}
+  .header {
+    margin-top: 15px;
+    align-self: start;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px;
+  }
 
-.header .header__title {
-  margin-right: auto;
-  margin-left: auto;
-  font-weight: 600;
-  font-size: 16px;
-}
+  .header .header__icon {
+    margin-right: 20px;
+  }
 
-.pagination {
-  align-self: end;
-  justify-self: center;
-  margin-bottom: 25px;
-  font-weight: 600;
-}
+  .header .header__title {
+    margin-right: auto;
+    margin-left: auto;
+    font-weight: 600;
+    font-size: 16px;
+  }
 
-.pagination .pagination__number--current {
-  text-decoration: line-through;
-}
+  .pagination {
+    align-self: end;
+    justify-self: center;
+    margin-bottom: 25px;
+    font-weight: 600;
+    margin-right: 50px;
+  }
 
-.slider {
-  padding: 0px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-weight: 600;
-}
+  .pagination .pagination__number--current {
+    text-decoration: line-through;
+  }
 
-.slider .slider__arrow:first-child {
-  margin-right: 20px;
-}
+  .slider {
+    padding: 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    height: 100%;
+    margin-right: 28px;
+  }
 
-.slider .slider__arrow:last-child {
-  margin-left: 20px;
-}
+  .slider .slider__arrow:first-child {
+    display: none;
+  }
 
-.slider .slider__content {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  height: 100%;
-  grid-gap: 20px;
-  background-color: white;
-}
+  .slider .slider__arrow:last-child {
+    display: none;
+  }
 
-.slider__content .slider__photo {
-  background-image: url(https://i.pinimg.com/564x/b4/c9/c5/b4c9c5d22a51f7c8289fb3ef85e80a95.jpg);
-  background-size: cover;
-  background-position: center;
-}
+  .slider .slider__content {
+    display: flex;
+    flex-direction: column;
+    height: 98%;
+    background-color: white;
+  }
 
-.info {
-  justify-self: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 80%;
-  padding: 30px 0 30px 0;
-}
+  .slider__content .slider__photo {
+    background-image: url(https://i.pinimg.com/564x/b4/c9/c5/b4c9c5d22a51f7c8289fb3ef85e80a95.jpg);
+    background-size: cover;
+    height: 70%;
+    background-position: center;
+  }
 
-.info .info__pre-title {
-  text-transform: uppercase;
-  color: #3498db;
-  font-weight: 300;
-}
+  .info {
+    padding: 6px;
+    height: 200px;
+    overflow: hidden;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+  }
 
-.info .info__pre-title,
-.info .info__title,
-.info .info__intro {
-  margin-bottom: 20px;
-}
+  .info .info__pre-title {
+    text-transform: uppercase;
+    color: #3498db;
+    font-weight: 300;
+  }
 
-.info .info__title {
-  font-size: 44px;
-  text-align: center;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-}
+  .info .info__pre-title,
+  .info .info__title,
+  .info .info__intro {
+    margin-bottom: 5px;
+  }
 
-.info .info__intro {
-  font-style: italic;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  text-align: center;
-}
+  .info .info__title {
+    font-size: 20px;
+    text-align: center;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
 
-.info .info__date {
-  text-transform: uppercase;
-  font-weight: 300;
-}
+  .info .info__intro {
+    font-style: italic;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    text-align: center;
+  }
 
-.info .info__intro {
-  color: var(--greyColor);
+  .info .info__date {
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+
+  .info .info__intro {
+    color: var(--greyColor);
+  }
 }

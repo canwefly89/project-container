@@ -1,0 +1,88 @@
+:root {
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+body,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 10px;
+  background-color: #374048;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+}
+
+.contents {
+  padding: 5px;
+  background-color: #fff;
+  padding: 0;
+}
+
+.contents .contents__title {
+  padding-left: 15px;
+  color: white;
+  font-weight: 200;
+  height: 50px;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+
+.contents .contents__photo {
+  width: 100%;
+  margin: 0;
+  background-size: cover;
+  background-position: center center;
+}
+
+.grid .contents:nth-child(4) .contents__photo,
+.grid .contents:nth-child(5) .contents__photo,
+.grid .contents:nth-child(7) .contents__photo {
+  float: left;
+  margin: 0 10px 10px 0;
+  width: 50%;
+}
+
+.grid .contents:nth-child(2) .contents__title,
+.grid .contents:nth-child(3) .contents__title,
+.grid .contents:nth-child(5) .contents__title,
+.grid .contents:nth-child(9) .contents__title,
+.grid .contents:nth-child(11) .contents__title {
+  background-color: #f0433c;
+}
+
+.grid .contents:nth-child(1) .contents__title,
+.grid .contents:nth-child(6) .contents__title,
+.grid .contents:nth-child(8) .contents__title,
+.grid .contents:nth-child(10) .contents__title {
+  background-color: #fc9723;
+}
+
+.grid .contents:nth-child(4) .contents__title,
+.grid .contents:nth-child(5) .contents__title,
+.grid .contents:nth-child(7) .contents__title {
+  background-color: #617d89;
+}
+
+.contents .contents__detail {
+  padding: 10px;
+  line-height: 1.2;
+  background-color: white;
+}
