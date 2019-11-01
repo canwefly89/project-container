@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.css {
+  width: 400px;
+  height: 600px;
+  margin: 50px 20px 0 20px;
+  background-color: #edd;
+}
+
+.css__project__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.css__project {
+  list-style: none;
+  text-align: center;
+  line-height: 3;
+  width: 200px;
+}
+
+.project-first {
+  padding-top: 40px;
+  border-top: 2px solid #000;
+}
