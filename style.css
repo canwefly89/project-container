@@ -30,10 +30,16 @@ h1 {
 }
 
 .css {
-  width: 400px;
+  width: 500px;
   height: 600px;
   margin: 50px 20px 0 20px;
   background-color: #edd;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .css__project__container {
@@ -41,6 +47,7 @@ h1 {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  padding-top: 20px;
 }
 
 .css__project {
@@ -48,9 +55,4 @@ h1 {
   text-align: center;
   line-height: 3;
   width: 200px;
-}
-
-.project-first {
-  padding-top: 40px;
-  border-top: 2px solid #000;
 }
