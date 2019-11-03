@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="style8.css" />
     <title>Project 8</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script rel="text/javascript">
+      function preloading(imageArray) {
+        let n = imageArray.length;
+        for (let i = 0; i < n; i++) {
+          let img = new Image();
+          img.src = imageArray[i];
+        }
+      }
+      preloading(["images/1.png", "images/2.png", "images/3.png"]);
+    </script>
   </head>
   <body>
     <div class="product-card">
